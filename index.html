@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Лафка у Оливандера — Магазин волшебных товаров</title>
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <style>
+    body { background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%); background-attachment: fixed; }
+  </style>
+</head>
+<body>
+  <header class="header">
+    <div class="header-content">
+      <div class="logo">
+        <h1>🪄 Лафка у Оливандера</h1>
+      </div>
+      <nav class="nav">
+        <ul>
+          <li><a href="./index.html">Главная</a></li>
+          <li><a href="./catalog/">Каталог</a></li>
+          <li><a href="./service/book.html">Мастер-классы</a></li>
+          <li><a href="./order/checkout.html">Оформить заказ</a></li>
+          <li><a href="./admin/login.html">Админ</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%), url('data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 1200 600%22><defs><pattern id=%22grid%22 width=%22100%22 height=%22100%22 patternUnits=%22userSpaceOnUse%22><path d=%22M 100 0 L 0 0 0 100%22 fill=%22none%22 stroke=%22rgba(255,255,255,0.05)%22 stroke-width=%221%22/></pattern></defs><rect width=%221200%22 height=%22600%22 fill=%22url(%23grid)%22/></svg>'); background-size: cover; background-position: center; position: relative; min-height: 500px;">
+      <div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0,0,0,0.3);"></div>
+      <div class="container" style="position: relative; z-index: 2;">
+        <h1 style="color: white; text-shadow: 0 2px 10px rgba(0,0,0,0.3);">🪄 Добро пожаловать в Лафку у Оливандера!</h1>
+        <p style="color: rgba(255,255,255,0.95); text-shadow: 0 1px 5px rgba(0,0,0,0.2);">Здесь вы найдёте палочки, метлы, зелья и другие магические товары. Всё — с легким налетом волшебства.</p>
+        <div style="margin-top: 2rem;">
+          <a href="./catalog/" class="btn btn-secondary" style="margin-right: 1rem;">📚 Перейти в каталог</a>
+          <a href="./service/book.html" class="btn btn-secondary">✨ Записаться на мастер-класс</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <h2 class="section-title" style="color: #6b4b9b;">✨ Популярные товары</h2>
+        <div class="catalog-grid grid">
+          <!-- Данные загружаются из API -->
+        </div>
+
+        <div class="text-center mt-2">
+          <a href="./catalog/" class="btn btn-primary">Смотреть весь каталог</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <h2 class="section-title" style="color: #6b4b9b;">🧙‍♂️ Мастер-классы и услуги</h2>
+        <div class="grid">
+          <div class="card">
+            <div class="card-content">
+              <h3 class="card-title">🪄 Мастер-класс по выбору палочки</h3>
+              <p class="card-text">Короткий курс по выбору палочки и основам магии.</p>
+              <div class="card-price">От 500 ₽</div>
+              <div class="card-footer">
+                <a href="../service/book.html" class="btn btn-primary" style="flex: 1;">Записаться</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-content">
+              <h3 class="card-title">✨ Индивидуальная консультация</h3>
+              <p class="card-text">Помощь в подборе товаров и создании набора начинающего волшебника.</p>
+              <div class="card-price">От 300 ₽</div>
+              <div class="card-footer">
+                <a href="../service/book.html" class="btn btn-primary" style="flex: 1;">Записаться</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-content">
+              <h3 class="card-title">📜 Подарочная упаковка</h3>
+              <p class="card-text">Аккуратная упаковка и письмо от Оливандера в комплекте.</p>
+              <div class="card-price">От 150 ₽</div>
+              <div class="card-footer">
+                <a href="../service/book.html" class="btn btn-primary" style="flex: 1;">Заказать</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <h2 class="section-title" style="color: #667eea;">💼 О нас</h2>
+        <div style="background: white; padding: 2rem; border-radius: 16px; box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);">
+          <p style="margin-bottom: 1.5rem; font-size: 1.05rem; color: #2c3e50; font-weight: 500;">
+            Лавка у Оливандера - это надежный партнер в мире волшебства. Мы предлагаем:
+          </p>
+          <ul style="list-style: none; padding-left: 0;">
+            <li style="padding: 0.8rem 0; color: #2c3e50; font-size: 1rem; border-bottom: 1px solid #f0f0f0;">✅ Широкий выбор волшебных палочек и аксессуаров</li>
+            <li style="padding: 0.8rem 0; color: #2c3e50; font-size: 1rem; border-bottom: 1px solid #f0f0f0;">✅ Профессиональное обслуживание и настройка палочек</li>
+            <li style="padding: 0.8rem 0; color: #2c3e50; font-size: 1rem; border-bottom: 1px solid #f0f0f0;">✅ Удобную систему заказов и оплаты</li>
+            <li style="padding: 0.8rem 0; color: #2c3e50; font-size: 1rem; border-bottom: 1px solid #f0f0f0;">✅ Индивидуальный подход к каждому волшебнику</li>
+            <li style="padding: 0.8rem 0; color: #2c3e50; font-size: 1rem;">✅ Гарантию на все выполненные работы</li>
+          </ul>
+          <p style="margin-top: 1.5rem; color: #666; line-height: 1.8;">
+            Наша команда профессионалов готова помочь вам выбрать идеальную палочку и обеспечить ее надлежащее обслуживание.
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 Лафка у Оливандера. Все права защищены.</p>
+      <p>Контакты: +7 (999) 123-45-67 | info@ollivanders.ru</p>
+    </div>
+  </footer>
+
+  <script src="./assets/js/main.js"></script>
+</body>
+</html>

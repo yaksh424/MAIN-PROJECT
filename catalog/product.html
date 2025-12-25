@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Детали товара - Лафка у Оливандера</title>
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <style>
+    body { background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%); background-attachment: fixed; }
+    .product-detail { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin-top: 2rem; }
+    .product-image { background: white; padding: 2rem; border-radius: 16px; display: flex; align-items: center; justify-content: center; }
+    .emoji-large { font-size: 200px; }
+    .product-info { background: white; padding: 2rem; border-radius: 16px; }
+    .price { color: #667eea; font-size: 2rem; font-weight: bold; margin: 1rem 0; }
+    .specs-table { width: 100%; border-collapse: collapse; margin: 1.5rem 0; }
+    .specs-table th, .specs-table td { padding: 0.8rem; text-align: left; border-bottom: 1px solid #eee; }
+    .specs-table th { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; }
+    .features { margin: 1.5rem 0; }
+    .features ul { list-style: none; padding: 0; }
+    .features li { padding: 0.5rem 0; }
+    @media (max-width: 768px) { .product-detail { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body>
+  <header class="header">
+    <div class="header-content">
+      <div class="logo"><h1>🪄 Лафка у Оливандера</h1></div>
+      <nav class="nav">
+        <ul>
+          <li><a href="../index.html">Главная</a></li>
+          <li><a href="./">Каталог</a></li>
+          <li><a href="../service/book.html">Сервис</a></li>
+          <li><a href="../order/checkout.html">Оформить заказ</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="container">
+        <a href="./" style="margin-bottom: 1rem; display: inline-block; color: #6b4b9b; text-decoration: none;">← Вернуться в каталог</a>
+        <div class="product-detail"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 Лафка у Оливандера. Все права защищены.</p>
+    </div>
+  </footer>
+
+  <script src="../assets/js/main.js"></script>
+</body>
+</html>
